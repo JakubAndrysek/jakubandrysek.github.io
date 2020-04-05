@@ -11,14 +11,14 @@ urls:
       url: /about
     - text: Projekty
       url: /blog
-    - text: Galerie
-      url: /gallery
+    # - text: Galerie
+    #   url: /gallery
     - text: Kontakt
       url : /contact
-    - text: Styleguide
-      url: /styleguide
-    - text: Get Started
-      url: /get-started
+    # - text: Styleguide
+    #   url: /styleguide
+    # - text: Get Started
+    #   url: /get-started
 
 # Edit these details
 
@@ -30,7 +30,7 @@ author_location: Czech republic
 author_website_url: "https://kubaandrysek.cz"
 
 author_work_experiences:
-            - designation: Dvě 1. místa na robotickém dni v Praze
+            - designation: Dvě první místa na robotickém dni v Praze
               company_name: červen 2019
               description: V kategoriích Toy Cleanup a Roadside Assistance
               company_logo: google.png
@@ -55,12 +55,12 @@ author_project_details:
                 project_title: Gamers Hub
                 project_description: A Platform built for Gamers and Game Devs
                 project_url: 
-                visibility: true
+                visibility: false
               - project_thumbnail: hack4r.PNG
                 project_title: Hack4r
                 project_description: A Platform built for Hackers and Penetration Testers
                 project_url: https://hack4r.com
-                visibility: true
+                visibility: false
 
 # social links
 # twitter_username: johndoe
