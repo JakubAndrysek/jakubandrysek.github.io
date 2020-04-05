@@ -4,7 +4,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Jmenuji se Jakub Andrýsek, ale všichni mi říkají Kubo. Jsem 3D modelář a programátor v Robotárně.
 
 url: "" # the base hostname & protocol for your site, e.g. https://example.github.io
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "kubaandrysek-website" # the subpath of your site, e.g. /blog
 
 urls:
     - text: O mě
