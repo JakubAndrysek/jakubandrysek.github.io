@@ -4,7 +4,7 @@
 
 Just a little something I'm using to jump start a site refresh. I like to think of it as a starter for building your own Jekyll site. I purposely keep the styling minimal and bare to make it easier to add your own flare and markup.
 
-![devlopr jekyll](https://github.com/sujaykundu777/devlopr-jekyll/blob/master/assets/img/screenshot.PNG?raw=true)
+
 
 You can easily manage the site using the admin : [http://localhost:4000/admin](http://localhost:4000/admin)
 
