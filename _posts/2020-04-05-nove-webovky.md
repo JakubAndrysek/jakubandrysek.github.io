@@ -11,3 +11,17 @@ thumbnail: fork33.png
 # Moje nové webovky jsou tu
 
 Používam Jekyll
+
+{% include image.html 
+    url="Kolo.png" 
+    description="Funguje"
+    gallery="gallery2"
+ %}
+ {% include image.html 
+    url="Kolo.png" 
+    description="Nefunguje"
+ %}
+  {% include image.html 
+    url="Kolo.png" 
+    description="Nefunguje"
+ %}
