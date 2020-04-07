@@ -17,7 +17,7 @@ layout: default
                       <div class="card blog-post">
 
                         <a href="{{ post.url | prepend: site.baseurl }}" data-disqus-identifier="{{ post.url }}" >
-                          <img class="card-img-top" src="{{site.url}}{{site.baseurl}}/assets/img/posts/{{ post.thumbnail }}" alt="{{ post.title }}">
+                          <img class="card-img-top" src="{{site.url}}{{site.baseurl}}/img/blog/{{ post.thumbnail }}" alt="{{ post.title }}">
                         </a>
 
                           <!--<img class="card-img-top" src="{{site.url}}{{site.baseurl}}/assets/img/posts/{{ post.thumbnail }}" alt="{{ post.title }}">-->
@@ -27,7 +27,7 @@ layout: default
                               <h4 class="card-title"><a href="{{ post.url | prepend: site.baseurl }}" data-disqus-identifier="{{ post.url }}" >{{ post.title }}</a></h4>
 
                               <h6 class="card-subtitle mb-2 text-muted">{{ post.date | date: "%d.  %m. %Y" }}</h6>
-                              <p class="card-text">{{ post.summary }} </p>
+                              <p class="card-text">{{ post.description }} </p>
 
                               <!--<a href="{{ post.url | prepend: site.baseurl }}" data-disqus-identifier="{{ post.url }}" class="btn btn-primary btn-lg">Read</a>-->
                               <span class="disqus-comment-count" data-disqus-identifier="{{ post.url }}"></span>
@@ -50,19 +50,19 @@ layout: default
                 <li class="disabled"><span aria-hidden="true">&laquo;</span></li>
               {% endif %}
 
-              <li><a href="/">První</a></li>
+              <li><a href="{{site.url}}{{site.baseurl}}/blog/">První</a>&nbsp; </li>
 
               {% for page in (1..paginator.total_pages) %}
                 {% if page == paginator.page %}
-                  <li class="active"><a>{{ page }}<span class="sr-only">(current)</span></a></li>
+                  <li class="active"><a>{{ page }}<span class="sr-only">(current)</span></a>&nbsp;</li>
                 {% elsif page == 1 %}
-                  <li><a href="/">{{ page }}</a></li>
+                  <li><a href="{{site.url}}{{site.baseurl}}/blog/">{{ page }}</a>&nbsp; </li>
                 {% else %}
-                  <li><a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>
+                  <li><a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>&nbsp;</li>
                 {% endif %}
               {% endfor %}
 
-              <li><a href="/page/{{ paginator.total_pages }}/">Poslední</a></li>
+              <li><a href="{{site.url}}{{site.baseurl}}/blog/page/{{ paginator.total_pages }}/">Poslední</a></li>
 
               {% if paginator.next_page %}
                 <li><a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">&raquo;</a></li>

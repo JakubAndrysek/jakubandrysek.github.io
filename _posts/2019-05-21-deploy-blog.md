@@ -4,7 +4,7 @@ title: Ja jsem Kuba
 author: Kuba Andrysek
 date: '2019-05-21 14:35:23 +0530'
 category: test
-summary: Deployment Guide for devlopr-jekyll blog using Github Pages and Travis CI
+description: Deployment Guide for devlopr-jekyll blog using Github Pages and Travis CI
 thumbnail: deploy-using-github-pages-and-travis.png
 ---
 

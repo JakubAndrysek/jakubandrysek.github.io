@@ -4,7 +4,7 @@ title: Using Siteleaf CMS with devlopr-jekyll Blog
 author: Sujay Kundu
 date: '2019-05-22 14:35:23 +0530'
 category: guides
-summary: Use Siteleaf CMS for your devlopr jekyll blog
+description: Use Siteleaf CMS for your devlopr jekyll blog
 thumbnail: siteleaf.jpg
 ---
 
