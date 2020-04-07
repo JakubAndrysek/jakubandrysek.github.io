@@ -130,6 +130,8 @@ paginate_path: "/blog/page/:num/"
 #     category: '/category/:name/'
 
 
+highlighter: rouge
+
 # Gallery
 defaults:
   -
