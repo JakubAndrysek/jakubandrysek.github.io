@@ -10,6 +10,8 @@ urls:
     - text: O mě
       url: /about
     - text: Projekty
+      url: /projekty
+    - text: Blog
       url: /blog
     # - text: Galerie
     #   url: /gallery
@@ -29,20 +31,24 @@ author_email: "email@kubaandrysek.cz"
 author_location: Czech republic
 author_website_url: "https://kubaandrysek.cz"
 
+
+# Choose what to show ( can be true or false)
+show_author_work_experiences: true
 author_work_experiences:
             - designation: Dvě první místa na robotickém dni v Praze
               company_name: červen 2019
               description: V kategoriích Toy Cleanup a Roadside Assistance
-              company_logo: google.png
+              company_logo: medvedice.jpg
               company_url: http://robotickyden.cz                        
               visibility: true
             - designation: 1. místo v programátorské soutěži
               company_name: březen 2019
               description: 
-              company_logo: google.png
+              company_logo: code.png
               company_url: 
               visibility: true
 
+show_author_education_details: true
 author_education_details:
               - college_logo: gvid.jpg
                 college_name: Gymnázium Brno, Vídeňská, příspěvková organizace
@@ -50,17 +56,14 @@ author_education_details:
                 description: Šestileté gymnázium zaměřené na informatikul
                 visibility: true
 
-author_project_details:
-              - project_thumbnail: gamershub.png
-                project_title: Gamers Hub
-                project_description: A Platform built for Gamers and Game Devs
-                project_url: 
-                visibility: false
-              - project_thumbnail: hack4r.PNG
-                project_title: Hack4r
-                project_description: A Platform built for Hackers and Penetration Testers
-                project_url: https://hack4r.com
-                visibility: false
+# Setup for page projekty-categories
+# Which categories are displayed on page projekty
+# It depends on the order
+show_author_project_details: true
+projects:
+      - template
+      - web
+      - guides
 
 # social links
 # twitter_username: johndoe
@@ -95,10 +98,7 @@ permalink: pretty
 # google analytics
 # google_analytics: UA-46783401-10
 
-# Choose what to show ( can be true or false)
-show_author_work_experiences: true
-show_author_education_details: true
-show_author_project_details: true
+
 
 # algolia search
 algolia:

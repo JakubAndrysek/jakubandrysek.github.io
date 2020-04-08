@@ -29,25 +29,25 @@ html[data-theme="dark"] {
     --button-background-color: #111;
 }
 
-html,
-html[data-theme="light"] {
-    --bold-color: rgb(0, 0, 0);
-    --box-background-color: rgb(249, 249, 250);
-    --highlight-color: hsl(0, 0%, 80%);
-    --light-border-color: rgb(230, 230, 230);
-    --light-text-color: rgb(72, 72, 74);
-    --link-color: rgb(0, 112, 201);
-    --link-color-visited: hsl(250, 100%, 37%);
-    --main-background-color: rgb(255, 255, 255);
-    --main-text-color: rgb(51, 51, 51);
-    --medium-text-color: hsl(0, 40%, 2%);
-    --sidebar-color: hsl(0, 0%, 90%);
-    --underline-color: hsl(0, 0%, 60%);
-    --social-link-color: #262222;
-    --card-background-color: rgb(250, 250, 250);
-    --newsletter-background-color: #00000008;
-    --button-background-color: #fff;
-}
+// html,
+// html[data-theme="light"] {
+//     --bold-color: rgb(0, 0, 0);
+//     --box-background-color: rgb(249, 249, 250);
+//     --highlight-color: hsl(0, 0%, 80%);
+//     --light-border-color: rgb(230, 230, 230);
+//     --light-text-color: rgb(72, 72, 74);
+//     --link-color: rgb(0, 112, 201);
+//     --link-color-visited: hsl(250, 100%, 37%);
+//     --main-background-color: rgb(255, 255, 255);
+//     --main-text-color: rgb(51, 51, 51);
+//     --medium-text-color: hsl(0, 40%, 2%);
+//     --sidebar-color: hsl(0, 0%, 90%);
+//     --underline-color: hsl(0, 0%, 60%);
+//     --social-link-color: #262222;
+//     --card-background-color: rgb(250, 250, 250);
+//     --newsletter-background-color: #00000008;
+//     --button-background-color: #fff;
+// }
 
 @media (prefers-color-scheme: dark) {
      /* Dark Mode */
@@ -71,23 +71,23 @@ html[data-theme="light"] {
     }
 
     /* Light Mode */
-    html[data-theme="light"] {
-        --bold-color: rgb(0, 0, 0);
-        --box-background-color: rgb(249, 249, 250);
-        --highlight-color: hsl(0, 0%, 80%);
-        --light-border-color: rgb(230, 230, 230);
-        --light-text-color: rgb(72, 72, 74);
-        --link-color: rgb(0, 112, 201);
-        --link-color-visited: hsl(250, 100%, 37%);
-        --main-background-color: rgb(255, 255, 255);
-        --main-text-color: rgb(51, 51, 51);
-        --medium-text-color: hsl(0, 0%, 20%);
-        --sidebar-color: hsl(0, 0%, 90%);
-        --underline-color: hsl(0, 0%, 60%);
-        --social-link-color: #262222;
-        --card-background-color: rgb(250, 250, 250);
-        --button-background-color: #fff;
-    }
+    // html[data-theme="light"] {
+    //     --bold-color: rgb(0, 0, 0);
+    //     --box-background-color: rgb(249, 249, 250);
+    //     --highlight-color: hsl(0, 0%, 80%);
+    //     --light-border-color: rgb(230, 230, 230);
+    //     --light-text-color: rgb(72, 72, 74);
+    //     --link-color: rgb(0, 112, 201);
+    //     --link-color-visited: hsl(250, 100%, 37%);
+    //     --main-background-color: rgb(255, 255, 255);
+    //     --main-text-color: rgb(51, 51, 51);
+    //     --medium-text-color: hsl(0, 0%, 20%);
+    //     --sidebar-color: hsl(0, 0%, 90%);
+    //     --underline-color: hsl(0, 0%, 60%);
+    //     --social-link-color: #262222;
+    //     --card-background-color: rgb(250, 250, 250);
+    //     --button-background-color: #fff;
+    // }
 }
 
 html,
@@ -148,8 +148,8 @@ header {
     padding: 0px !important;
 }
 .card {
-    margin: 20px !important;
-    padding: 20px !important;
+    margin: 5px !important;
+    padding: 5px !important;
     background-color: var(--card-background-color) !important;
 }
 .navbar{
@@ -359,6 +359,11 @@ header {
     }
     .project-link{
         color: var(--link-color);
+    }
+    .container {
+        padding-right: 5px;
+        padding-left: 5px;
+        margin: -5px;
     }
 }
 

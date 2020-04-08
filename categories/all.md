@@ -1,30 +1,29 @@
 ---
 layout: page
-title: Všechny kategorie
-permalink: /blog/categories/
+title: Moje projekty
+permalink: /projekty/
 ---
  
 
-<h3>  {{ page.title }} </h3>
+<h1>  {{ page.title }} </h1>
 
-
-<div id="categories">
-{% for category in site.categories %}
-  <div class="category-box" >
-    {% capture category_name %}{{ category | first }}{% endcapture %}
-    <div id="#{{ category_name | slugize }}"></div>
-    <h4 class="category-head"><a href="{{ site.baseurl }}/blog/categories/{{ category_name }}">{{ category_name }}</a></h4>
-    <a name="{{ category_name | slugize }}"></a>
-     {% for post in site.categories[category_name] %}
-    <article class="center">
-      <h6 ><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h6>
-    </article>
-
-
-    {% endfor %}
-    
-  </div>
+<div class="container row">
+{% for projekt in site.projects %}
+    <!--PROJECT-->
+    <div class="card blog-post">
+      <!--THUMBNAIL-->
+      <a href="{{ site.categories[projekt][0].url }}" data-disqus-identifier="{{ post.url }}" >
+        <img class="card-img-top" src="{{site.url}}{{site.baseurl}}/img/blog/{{ site.categories[projekt][0].thumbnail }}">
+      </a>
+      <!--TITLE-->
+      <div class="card-body center">
+        <!--TITLE-->
+        <h4 class="card-title">{{ projekt | capitalize }}</h4>
+        {% for post in site.categories[projekt] limit:5 %}
+          <h6 class="card-subtitle mb-2 "><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h6>
+        {% endfor %}
+        <!--<a href="{{ post.url | prepend: site.baseurl }}" data-disqus-identifier="{{ post.url }}" class="btn btn-primary btn-lg">Read</a>-->
+      </div>
+    </div>     
 {% endfor %}
 </div>
-
-

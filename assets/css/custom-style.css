@@ -8,13 +8,15 @@ blockquote {
     border: 1px solid;
 }
 
-#gallery{
-    margin:50px;
+.gallery{
+    margin:4px;
     
 }
 
 #highlight{
     padding: 55px;
 }
+
+
 
 

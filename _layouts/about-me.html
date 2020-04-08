@@ -8,7 +8,7 @@ layout: default
 
             <div class="card" id="profile-card">
                 <a href="/">
-                    <img src="/assets/img/{{ site.author_logo }}" class="profile-img">
+                    <img src="{{site.url}}{{site.baseurl}}/img/about/{{ site.author_logo }}" class="profile-img">
                 </a>
                 <h1 class="profile-name"> {{ site.title }}</h1>
                  <p class="profile-bio"> {{ site.subtitle }}</p>
@@ -111,14 +111,15 @@ layout: default
 
 
             {% if site.show_author_project_details == true %}
-            <div id="author_projects" class="card">
+            
+            <!-- <div id="author_projects" class="card">
                 <h1 class="card-title">Projekty</h1>
                 <br />
                 {% for project in site.author_project_details %}
                 {% if project.visibility == true %}
                 <div class="row" id="project-card">
                         <div class="col-md-6">
-                            <img src="{{site.url}}{{site.baseurl}}/assets/img/{{project.project_thumbnail}}" class="project-img" />
+                            <img src="{{site.url}}{{site.baseurl}}/img/about/{{project.project_thumbnail}}" class="project-img" />
                         </div>
                         <div class="col-md-4 center">
                             <h4 class="experience-title"> {{ project.project_title }}</h4>
@@ -130,7 +131,39 @@ layout: default
                     {% endif %}
 
                     {% endfor %}
+            </div> -->
+
+
+
+            <div id="author_projects" class="card">
+                <h1 class="card-title">Projekty</h1>
+                <br />
+
+                <div class="container row">
+                    {% for projekt in site.projects limit:2 %}
+                        <!--PROJECT-->
+                        <div class="card blog-post">
+                          <!--THUMBNAIL-->
+                          <a href="{{ site.categories[projekt][0].url }}" data-disqus-identifier="{{ post.url }}" >
+                            <img class="card-img-top" src="{{site.url}}{{site.baseurl}}/img/blog/{{ site.categories[projekt][0].thumbnail }}">
+                          </a>
+                          <!--TITLE-->
+                          <div class="card-body center">
+                            <!--TITLE-->
+                            <h4 class="card-title">{{ projekt | capitalize }}</h4>
+                              <h6 class="card-subtitle mb-2 ">{{ site.categories[projekt][0].description }}</h6>
+                            <!--<a href="{{ post.url | prepend: site.baseurl }}" data-disqus-identifier="{{ post.url }}" class="btn btn-primary btn-lg">Read</a>-->
+                          </div>
+                        </div>     
+                    {% endfor %}
+                </div>
             </div>
+
+
+
+
+
+
             {% endif %}
 
             {% if site.show_author_work_experiences == true %}
@@ -141,7 +174,7 @@ layout: default
                 {% if exp.visibility == true %}
                 <div class="row">
                         <div class="col-md-2">
-                            <img src="{{site.url}}{{site.baseurl}}/assets/img/{{ exp.company_logo }}" class="company-logo" />
+                            <img src="{{site.url}}{{site.baseurl}}/img/about/{{ exp.company_logo }}" class="company-logo" />
                         </div>
                         <div class="col-md-6">
                             <h4 class="experience-title"> {{ exp.designation }}</h4>
@@ -165,7 +198,7 @@ layout: default
                 {% if detail.visibility == true %}
                 <div class="row">
                         <div class="col-md-2">
-                            <img src="{{site.url}}{{site.baseurl}}/assets/img/{{ detail.college_logo}}" class="company-logo" />
+                            <img src="{{site.url}}{{site.baseurl}}/img/about/{{ detail.college_logo}}" class="company-logo" />
                         </div>
                         <div class="col-md-6">
                             <h4 class="experience-title"> {{detail.college_degree }}</h4>
