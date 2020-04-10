@@ -369,7 +369,7 @@
     // Internationalization
     // ====================
 
-    lang: "en",
+    lang: "cs",
     i18n: {
       en: {
         CLOSE: "Close",
