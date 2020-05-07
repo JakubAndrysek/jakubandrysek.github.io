@@ -1,10 +1,25 @@
 
 <div class="col-lg-3">
 
-    <div class="card">
+    <!-- <div class="card">
         <div class="card-header"><a href="{{ site.url}}{{site.baseurl}}/blog/categories/">Kategorie</a> </div>
         <div class="card-body text-dark">
             {%- include blog_categories.html -%}
         </div>
+    </div> -->
+    <!-- {% if site.author_bio %}
+    <div class="card">
+        <h1 class="card-title">O mě</h1>
+        <p> {{ site.author_bio }}</p>
     </div>
+    {% endif %} -->
+    <div class="card">
+        <div class="card-header"> O mě </div>
+        <div class="card-body">
+            <!-- Your Bio -->
+            <p class="author_bio"> {{ site.author_bio }}</p>
+
+            {%- include github_star_button.html -%}
+        </div>
+    </div>    
 </div>

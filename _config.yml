@@ -61,9 +61,10 @@ author_education_details:
 # It depends on the order
 show_author_project_details: true
 projects:
-      - template
-      - web
-      - guides
+      - laser
+      - 3D-tisk
+      - návod
+      - lezcata
 
 # social links
 # twitter_username: johndoe
@@ -109,8 +110,8 @@ algolia:
   search_only_api_key: e2d65805318c9e4170af258817cdddbd #58ffdd7cd6c45ec1577a7fcd789b1b9a
 
 # pagination of posts
-paginate: 4
-per_page: 4
+paginate: 6
+per_page: 6
 paginate_path: "/blog/page/:num/"
 
 # minify

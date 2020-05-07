@@ -10,7 +10,7 @@ blockquote {
 
 .gallery{
     margin:4px;
-    
+    max-width: 100%;
 }
 
 #highlight{
@@ -20,3 +20,33 @@ blockquote {
 
 
 
+ul{
+    padding-left: 20px;
+}
+
+.iframe-container {
+    overflow: hidden;
+    padding-top: 70%;
+    position: relative;
+}
+   
+.iframe-container iframe {
+    border: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+
+
+
+@media (max-width: 850px) {
+    .standart{
+        width: 100%;
+    }
+    .iframe-container {
+        padding-top: 150%;    
+    }
+}
