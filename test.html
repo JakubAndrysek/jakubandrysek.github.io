@@ -1,0 +1,24 @@
+<div class="blog-paginator">
+  <!-- Pagination links -->
+  {% if paginator.total_pages > 1 %}
+    <ul class="pagination pagination-sm ">
+
+      <!-- First -->
+      <li class="page-item"><a href="{{site.url}}{{site.baseurl}}/blog/" class="page-link"><span aria-hidden="true">&laquo;</span></a>&nbsp; </li>
+
+      {% for page in (1..paginator.total_pages) %}
+        {% if page == paginator.page %}
+          <li class="page-item active"><a class="page-link">{{ page }}<span class="sr-only">(current)</span></a>&nbsp;</li>
+        {% elsif page == 1 %}
+          <li class="page-item"><a class="page-link" href="{{site.url}}{{site.baseurl}}/blog/">{{ page }}</a>&nbsp; </li>
+        {% else %}
+          <li class="page-item"><a class="page-link" href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>&nbsp;</li>
+        {% endif %}
+      {% endfor %}
+      
+      <!-- Last -->
+      <li class="page-item"><a href="{{site.url}}{{site.baseurl}}/blog/page/{{ paginator.total_pages }}/" class="page-link"><span aria-hidden="true">&raquo;</span></a></li>
+
+    </ul>
+  {% endif %}
+</div>
