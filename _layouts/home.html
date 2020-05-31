@@ -1,6 +1,13 @@
 ---
 layout: default
 ---
+<script>
+    $(document).ready(function() {
+      $("#typewriteText").typewrite({
+        actions: [{ type: "devlopr is a jekyll theme built for developers. You can edit this in _config.yml file" }]
+      });
+    });
+  </script>
 
     <div class="row ">
 
@@ -106,6 +113,7 @@ layout: default
             <div class="card">
                 <h1 class="card-title">O mě</h1>
                 <p> {{ site.author_bio }}</p>
+                <p class="lead" id="typewriteText"></p>
             </div>
             {% endif %}
 

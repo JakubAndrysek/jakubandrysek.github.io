@@ -102,12 +102,12 @@ permalink: pretty
 
 
 # algolia search
-algolia:
-  application_id: XH3020M2M2 #D9WA1YKTRQ
-  index_name: blog_posts # You can replace that with whatever name you want
-  files_to_exclude: []
-  nodes_to_index: 'article'
-  search_only_api_key: e2d65805318c9e4170af258817cdddbd #58ffdd7cd6c45ec1577a7fcd789b1b9a
+# algolia:
+#   application_id: XH3020M2M2 #D9WA1YKTRQ
+#   index_name: blog_posts # You can replace that with whatever name you want
+#   files_to_exclude: []
+#   nodes_to_index: 'article'
+#   search_only_api_key: e2d65805318c9e4170af258817cdddbd #58ffdd7cd6c45ec1577a7fcd789b1b9a
 
 # pagination of posts
 paginate: 6
@@ -134,12 +134,12 @@ paginate_path: "/blog/page/:num/"
 highlighter: rouge
 
 # Gallery
-defaults:
-  -
-    scope:
-      path: "gallery"
-    values:
-      permalink: /:path/:basename:output_ext
+# defaults:
+#   -
+#     scope:
+#       path: "gallery"
+#     values:
+#       permalink: /:path/:basename:output_ext
 
 # Build settings
 
