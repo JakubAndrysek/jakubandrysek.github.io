@@ -8,7 +8,6 @@ layout: default
       });
     });
   </script>
-
     <div class="row ">
 
         <div class="col-lg-4 offset-md-1">
@@ -90,22 +89,25 @@ layout: default
 
 
             </div>
+            <div class="hide-small">
+                <div class="card">
+                    <h1> Skilly </h1>
 
-            <div class="card">
-                <h1> Skilly </h1>
+                    {%- include author_skills.html -%}
 
-                {%- include author_skills.html -%}
+                </div>
 
+            
+                {% if site.wakatime_username %}
+                <div class="card">
+                    <h1> Moje programátorská aktivita </h1>
+    
+                    {%- include coding_activity.html -%}
+    
+                </div>
+                {% endif %}
             </div>
 
-            {% if site.wakatime_username %}
-            <div class="card">
-                <h1> Moje programátorská aktivita </h1>
-
-                {%- include coding_activity.html -%}
-
-            </div>
-            {% endif %}
 
         </div>
          <div class="col-lg-7">
@@ -164,6 +166,10 @@ layout: default
                           </div>
                         </div>     
                     {% endfor %}
+                </div>
+                <div class="text-center">
+                    <a href="/projekty"><button class="orange-button">Další projekty</button></a>
+                    <a href="/blog"><button class="orange-button">Blog</button></a>
                 </div>
             </div>
 

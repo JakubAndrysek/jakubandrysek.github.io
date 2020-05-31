@@ -47,11 +47,11 @@ url="stromecek/Stromecek_navod_Page_1.png"
 url="stromecek/Stromecek_navod_Page_2.png"
 %}
 
-<a href="{{ site.url }}{{ site.baseurl }}/img/blog/stromecek/Stromecek_navod.pdf" target="_blank">
-  <span style="font-size: 35px; color: #f69801;">
-    <i class="fas fa-download"></i>
-  </span>Stáhnout návod
-</a>
+
+{% include download_local.html
+url="img/blog/stromecek/Stromecek_navod.pdf"
+text="Stáhnout návod"
+%}
 
 ## Podklady pro výrobu
 
@@ -62,11 +62,11 @@ url="stromecek/Stromecek1ks.png"
 h="300"
 %}  
 
-<a href="{{ site.url }}{{ site.baseurl }}/img/blog/stromecek/Stromecek1ks.svg" target="_blank">
-  <span style="font-size: 35px; color: #f69801;">
-    <i class="fas fa-download"></i>
-  </span>Stáhnout podklady
-</a>  
+
+{% include download_svg.html
+url="img/blog/stromecek/Stromecek1ks.svg"
+text="Stáhnout podklady"
+%}
 
 
 100 stromečků
@@ -76,11 +76,12 @@ url="stromecek/Stromecek100ks.png"
 h="300"
 %}    
 
-<a href="{{ site.url }}{{ site.baseurl }}/img/blog/stromecek/Stromecek_navod.pdf" target="_blank">
-  <span style="font-size: 35px; color: #f69801;">
-    <i class="fas fa-download"></i>
-  </span>Stáhnout podklady
-</a>  
+
+{% include download_svg.html
+url="img/blog/stromecek/Stromecek100ks.svg"
+text="Stáhnout podklady"
+%} 
+
 <br>
 
 {% include image.html
@@ -90,6 +91,8 @@ url="stromecek/Hromada.jpg"
 url="stromecek/Plato.jpg"
 %}
 
+
+<br>
 ### Další prototyp
 
 {% include image.html

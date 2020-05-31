@@ -49,7 +49,23 @@ ul{
     .iframe-container {
         padding-top: 150%;    
     }
+    .hide-small{
+        display: none;
+    }
 }
+
+@media (max-width: 850px) {
+    .projects-more button{
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 850px) {
+    .show-blog-text{
+        display: none;
+    }
+}
+
 
 .profile-img {
     border-radius: 50%;
@@ -82,3 +98,43 @@ ul{
 .blog-paginator.page-link {
     background-color: red;
 }
+
+.orange-button
+{
+    background-color: #f69801;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 8px;
+}
+
+@media (max-width: 850px) {
+    .orange-button{
+        margin-top: 20px;
+    }
+}
+
+
+
+.orange-button:hover {
+    background-color: #dfb674;
+  }
+
+
+/* .btn-download{
+    background-color: DodgerBlue;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.btn-download:hover{
+    background-color: RoyalBlue;
+} */

@@ -6,13 +6,14 @@
 
                 <nav class="navbar navbar-expand-lg fixed-top navbar-dark " id="topNav">
                 <!-- <a class="navbar-brand" href="#">{{site.title}}</a> -->
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand hide-header" href="/">
+                    <img src="{{ site.url}}{{site.baseurl}}/assets/img/Kolo_Kuba.png" alt="logo" style="width:120px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <a class="navbar-brand hide-header" href="/">
-                        <img src="{{ site.url}}{{site.baseurl}}/assets/img/Kolo.png" alt="logo" style="width:35px;">
-                    </a>
-                    <a class="navbar-brand" href="/">{{site.title}}</a>
+
+                    <!-- <a class="navbar-brand" href="/">{{site.title}}</a> -->
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav">
                           {% for i in site.urls %}

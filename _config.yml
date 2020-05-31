@@ -26,9 +26,9 @@ urls:
 
 author_logo: profile.png
 author: Kuba Andrýsek
-author_bio: Jmenuji se Jakub Andrýsek, ale všichni mi říkají Kubo. Jsem 3D modelář a programátor v Robotárně. #Hello, My Name is John Doe. I love to Code and Design. devlopr-jekyll is a theme built for developers.
+author_bio: Jmenuji se Jakub Andrýsek, ale všichni mi říkají Kubo. Jsem programátor, 3D modelář a elektronik v Robotárně.
 author_email: "email@kubaandrysek.cz"
-author_location: Czech republic
+author_location: Česká republika - Brno
 author_website_url: "https://kubaandrysek.cz"
 
 
@@ -53,7 +53,7 @@ author_education_details:
               - college_logo: gvid.jpg
                 college_name: Gymnázium Brno, Vídeňská, příspěvková organizace
                 college_url: http://www.gvid.cz
-                description: Šestileté gymnázium zaměřené na informatikul
+                description: Šestileté gymnázium zaměřené na informatiku
                 visibility: true
 
 # Setup for page projekty-categories
@@ -78,7 +78,7 @@ linkedin_username: jakub-andrysek
 # dribbble_username: johndoe
 # flickr_username: johndoe
 
-## Pro sprovozneni komentaru!!
+
 #for comments using disqus
 disqus_shortname: kubaandrysek
 
