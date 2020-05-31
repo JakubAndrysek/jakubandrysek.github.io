@@ -1,5 +1,6 @@
 ---
 layout: default
+image: profile.png
 ---
 
 
@@ -10,6 +11,7 @@ layout: default
   </div>
   <!-- Blog Post Breadcrumbs -->
   {%- include blog_post_breadcrumb.html -%}
+  
 </div>
  <div class="row">
 
@@ -22,7 +24,7 @@ layout: default
                       <div class="card blog-post">
 
                         <a href="{{ post.url | prepend: site.baseurl }}" data-disqus-identifier="{{ post.url }}" >
-                          <img class="card-img-top" src="{{site.url}}{{site.baseurl}}/img/blog/{{ post.thumbnail }}" alt="{{ post.title }}">
+                          <img class="card-img-top" src="{{site.url}}{{site.baseurl}}/assets/blog/{{ post.thumbnail }}" alt="{{ post.title }}">
                         </a>
 
                           <!--<img class="card-img-top" src="{{site.url}}{{site.baseurl}}/assets/img/posts/{{ post.thumbnail }}" alt="{{ post.title }}">-->

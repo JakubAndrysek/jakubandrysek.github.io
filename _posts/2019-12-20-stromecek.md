@@ -49,7 +49,7 @@ url="stromecek/Stromecek_navod_Page_2.png"
 
 
 {% include download_local.html
-url="img/blog/stromecek/Stromecek_navod.pdf"
+url="stromecek/Stromecek_navod.pdf"
 text="Stáhnout návod"
 %}
 
@@ -64,7 +64,7 @@ h="300"
 
 
 {% include download_svg.html
-url="img/blog/stromecek/Stromecek1ks.svg"
+url="stromecek/Stromecek1ks.svg"
 text="Stáhnout podklady"
 %}
 
@@ -78,7 +78,7 @@ h="300"
 
 
 {% include download_svg.html
-url="img/blog/stromecek/Stromecek100ks.svg"
+url="stromecek/Stromecek100ks.svg"
 text="Stáhnout podklady"
 %} 
 

@@ -16,7 +16,7 @@ urls:
     # - text: Galerie
     #   url: /gallery
     - text: Kontakt
-      url : /contact
+      url : /kontakt
     # - text: Styleguide
     #   url: /styleguide
     # - text: Get Started
@@ -97,7 +97,7 @@ highlighter: rouge
 permalink: pretty
 
 # google analytics
-# google_analytics: UA-46783401-10
+google_analytics: UA-149505692-2
 
 
 

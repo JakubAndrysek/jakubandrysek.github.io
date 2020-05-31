@@ -2,6 +2,7 @@
 layout: page
 title: Moje projekty
 permalink: /projekty/
+image: assets/page/projekty/projekty.png
 ---
  
 
@@ -13,7 +14,7 @@ permalink: /projekty/
     <div class="card blog-post">
       <!--THUMBNAIL-->
       <a href="{{ site.categories[projekt][0].url }}" data-disqus-identifier="{{ post.url }}" >
-        <img class="card-img-top" src="{{site.url}}{{site.baseurl}}/img/blog/{{ site.categories[projekt][0].thumbnail }}">
+        <img class="card-img-top" src="{{site.url}}{{site.baseurl}}/assets/blog/{{ site.categories[projekt][0].thumbnail }}">
       </a>
       <!--TITLE-->
       <div class="card-body center">

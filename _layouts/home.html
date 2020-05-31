@@ -14,7 +14,7 @@ layout: default
 
             <div class="card" id="profile-card">
                 <a href="/">
-                    <img src="{{site.url}}{{site.baseurl}}/img/about/{{ site.author_logo }}" class="profile-img">
+                    <img src="{{site.url}}{{site.baseurl}}/assets/page/home/{{ site.author_logo }}" class="profile-img">
                 </a>
                 <h1 class="profile-name"> {{ site.title }}</h1>
                  <p class="profile-bio"> {{ site.subtitle }}</p>
@@ -155,7 +155,7 @@ layout: default
                         <div class="card blog-post">
                           <!--THUMBNAIL-->
                           <a href="{{ site.categories[projekt][0].url }}" data-disqus-identifier="{{ post.url }}" >
-                            <img class="card-img-top" src="{{site.url}}{{site.baseurl}}/img/blog/{{ site.categories[projekt][0].thumbnail }}">
+                            <img class="card-img-top" src="{{site.url}}{{site.baseurl}}/assets/blog/{{ site.categories[projekt][0].thumbnail }}">
                           </a>
                           <!--TITLE-->
                           <div class="card-body center">
@@ -188,7 +188,7 @@ layout: default
                 {% if exp.visibility == true %}
                 <div class="row">
                         <div class="col-md-2">
-                            <img src="{{site.url}}{{site.baseurl}}/img/about/{{ exp.company_logo }}" class="company-logo" />
+                            <img src="{{site.url}}{{site.baseurl}}/assets/page/home/{{ exp.company_logo }}" class="company-logo" />
                         </div>
                         <div class="col-md-6">
                             <h4 class="experience-title"> {{ exp.designation }}</h4>
@@ -212,7 +212,7 @@ layout: default
                 {% if detail.visibility == true %}
                 <div class="row">
                         <div class="col-md-2">
-                            <img src="{{site.url}}{{site.baseurl}}/img/about/{{ detail.college_logo}}" class="company-logo" />
+                            <img src="{{site.url}}{{site.baseurl}}/assets/page/home/{{ detail.college_logo}}" class="company-logo" />
                         </div>
                         <div class="col-md-6">
                             <h4 class="experience-title"> {{detail.college_degree }}</h4>
