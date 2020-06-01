@@ -138,3 +138,20 @@ ul{
 .btn-download:hover{
     background-color: RoyalBlue;
 } */
+
+
+a.nav-link.nav-hover:hover {
+    /* color: #f69801 !important;  */
+    text-decoration: underline;
+}
+
+a.nav-link.nav-hover.active {
+    color: #f69801 !important; 
+    /* text-decoration: underline; */
+}
+
+.zoom:hover {
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1); 
+  }

@@ -10,13 +10,13 @@ urls:
     # - text: O mě
     #   url: /about
     - text: Projekty
-      url: /projekty
+      url: /projekty/
     - text: Blog
-      url: /blog
+      url: /blog/
     # - text: Galerie
     #   url: /gallery
     - text: Kontakt
-      url : /kontakt
+      url : /kontakt/
     # - text: Styleguide
     #   url: /styleguide
     # - text: Get Started
