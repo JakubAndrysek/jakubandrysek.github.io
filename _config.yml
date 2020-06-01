@@ -63,7 +63,7 @@ show_author_project_details: true
 projects:
       - laser
       - 3D-tisk
-      - návod
+      - navod
       - lezcata
 
 # social links

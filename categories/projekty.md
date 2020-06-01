@@ -19,7 +19,7 @@ image: assets/page/projekty/projekty.png
       <!--TITLE-->
       <div class="card-body center">
         <!--TITLE-->
-        <h4 class="card-title">{{ projekt | capitalize }}</h4>
+        <h4 class="card-title">{{ projekt | capitalize | replace: "Navod", "Návod" }}</h4>
         {% for post in site.categories[projekt] limit:5 %}
           <h6 class="card-subtitle mb-2 "><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h6>
         {% endfor %}

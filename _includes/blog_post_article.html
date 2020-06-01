@@ -3,9 +3,10 @@
         <!-- <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1> -->
         <h4 class="post-meta">{{ page.title }}</h4>
         <p class="post-summary">Napsal : {% if page.author %}
-            <a href="{{ site.url}}{{site.baseurl}}/about">
+            <a href="{{ site.url}}{{site.baseurl}}/">
                 <img src="{{site.url}}{{site.baseurl}}/assets/img/{{ site.author_logo }}" class="author-profile-img">
-            
+            </a>
+            <a href="{{ site.url}}{{site.baseurl}}/">
                 <span itemprop="author" itemscope itemtype="http://schema.org/Person">
                     <span itemprop="name">{{ page.author }}</span>
                 </span>
