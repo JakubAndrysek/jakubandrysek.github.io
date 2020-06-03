@@ -1,7 +1,7 @@
 title: Kuba Andrýsek
 # subtitle: Moje projekty
 description: >- # this means to ignore newlines until "baseurl:"
-  Jmenuji se Jakub Andrýsek, ale všichni mi říkají Kubo. Jsem 3D modelář a programátor v Robotárně.
+  Jmenuji se Jakub Andrýsek, ale všichni mi říkají Kubo. Jsem programátor, 3D modelář a elektronik v Robotárně.
 
 url: "https://kubaandrysek.cz" # the base hostname & protocol for your site, e.g. https://example.github.io
 baseurl: "" # the subpath of your site, e.g. /blog
