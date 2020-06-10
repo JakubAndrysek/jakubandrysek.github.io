@@ -2,7 +2,7 @@
                                  #url se určuje podle názvu
 title: Vánoční stromeček #title|název článku   
 layout: post                     #layout|šablona
-author: Kuba Andrysek            #authos|autor
+author: Kuba Andrýsek            #authos|autor
 date: '2019-12-20 16:00:00 +1'   #date|datum vytvoření článku
 category: laser               #category|kategorie -> pro novou kategorii je potřeba vytvořit stránku v "categories"
 description: Podklady a návod na výrobu stromečku pro DDM Helceletka             #Header|nadpis
