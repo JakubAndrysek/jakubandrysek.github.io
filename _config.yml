@@ -61,6 +61,7 @@ author_education_details:
 # It depends on the order
 show_author_project_details: true
 projects:
+      - roboruka
       - laser
       - 3D-tisk
       - navod
