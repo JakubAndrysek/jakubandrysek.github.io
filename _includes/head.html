@@ -5,7 +5,7 @@
   <meta http-equip="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
    <meta name="description" content="{% if page.title %}{{ page.title }}{% else %}{{ site.description }}{% endif %} - Kubaandrysek.cz" />
-    <meta name="keywords" content="{% if page.title %}{{ page.title }}, {{ site.title }}, {% for categ in page.categories %}{{ categ }}{% if forloop.last == false %}, {% endif %}{% endfor %}{% else %}{{ site.title }}, {% for category in site.categories %}{% capture categories_slug %}{{ category | first }}{% endcapture %}{% for categ in categories_slug %}{{ categ }}{% endfor %}{% if forloop.last == false %}, {% endif %}{% endfor %}{% endif %}" />
+    <meta name="keywords" content="{% if page.title %}{{ page.title }}, {{ site.title }},{{page.keywords | join: ', ' | escape}}, {% for categ in page.categories %}{{ categ }}{% if forloop.last == false %}, {% endif %}{% endfor %}{% else %}{{ site.title }}, {% for category in site.categories %}{% capture categories_slug %}{{ category | first }}{% endcapture %}{% for categ in categories_slug %}{{ categ }}{% endfor %}{% if forloop.last == false %}, {% endif %}{% endfor %}{% endif %}" />
     <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
     <meta content="{{ site.share.fb_appid }}" property="fb:app_id">
     <meta content="{{ site.title }}" property="og:site_name">
@@ -21,9 +21,9 @@
     {% endif %}
 
     {% if page.description %}
-      <meta content="{{ page.description }}" property="og:description">
+      <meta content="Kubaandrysek.cz - {{ page.description }}" property="og:description">
     {% else %}
-      <meta content="{{ site.description }}" property="og:description">
+      <meta content="Kubaandrysek.cz - {{ site.description }}" property="og:description">
     {% endif %}
 
     {% if page.url %}
@@ -74,9 +74,9 @@
     {% endif %}
 
     {% if page.description %}
-      <meta name="twitter:description" content="{{ page.description }}">
+      <meta name="twitter:description" content="Kubaandrysek.cz - {{ page.description }}">
     {% else %}
-      <meta name="twitter:description" content="{{ site.description }}">
+      <meta name="twitter:description" content="Kubaandrysek.cz - {{ site.description }}">
     {% endif %}
 
     {% if page.header-img %}
@@ -85,7 +85,6 @@
 
   <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.css">
   <link rel="stylesheet" href="/assets/css/main.css" />
-  <link rel="stylesheet" href="/assets/css/custom-style.css" />
   <link rel="stylesheet" href="/assets/bower_components/lightgallery/dist/css/lightgallery.min.css"/>
   <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.0-beta.3/default/snipcart.css" />
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.css">
@@ -93,6 +92,7 @@
   <link rel="stylesheet" href="/assets/bower_components/bootstrap/dist/css/bootstrap.min.css" />
   <link rel="stylesheet" href="/assets/bower_components/font-awesome/web-fonts-with-css/css/fontawesome-all.min.css" />
   <link rel="stylesheet" type="text/css" href="/assets/css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="/assets/css/custom-style.css" />
   <!-- <link rel="stylesheet" type="text/css" href="/assets/css/monokai.css"> -->
 
 

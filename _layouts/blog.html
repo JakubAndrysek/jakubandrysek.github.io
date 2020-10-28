@@ -51,31 +51,36 @@ image: profile.png
           <!-- Pagination links -->
           {% if paginator.total_pages > 1 %}
             <ul class="pagination pagination-sm">
-              {% if paginator.previous_page %}
-                <li><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo;</a></li>
-              {% else %}
-                <li class="disabled"><span aria-hidden="true">&laquo;</span></li>
-              {% endif %}
+				{% if paginator.previous_page %}
+				<li class="page-item"><a href="{{ paginator.previous_page_path }}" class="page-link">Předchozí</a></li>
+			  	{% else %}
+				  <li class="page-item disabled"><span class="page-link">Předchozí</span></li>
+			  	{% endif %}
+								
+				&nbsp;
+				
+				{% for page in (1..paginator.total_pages) %}
+					{% if page == paginator.page %}
+						<li class="page-item active"><a>{{ page }}<span class="sr-only page-link">(current)</span></a>&nbsp;</li>
+					{% elsif page == 1 %}
+						<li class="page-item"><a class="page-link" href="{{site.url}}{{site.baseurl}}/blog/">{{ page }}</a>&nbsp; </li>
+					{% else %}
+						<li class="page-item"><a class="page-link" href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>&nbsp;</li>
+					{% endif %}
+				{% endfor %}
 
-              <li><a href="{{site.url}}{{site.baseurl}}/blog/">První</a>&nbsp; </li>
-
-              {% for page in (1..paginator.total_pages) %}
-                {% if page == paginator.page %}
-                  <li class="active"><a>{{ page }}<span class="sr-only">(current)</span></a>&nbsp;</li>
-                {% elsif page == 1 %}
-                  <li><a href="{{site.url}}{{site.baseurl}}/blog/">{{ page }}</a>&nbsp; </li>
-                {% else %}
-                  <li><a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>&nbsp;</li>
-                {% endif %}
-              {% endfor %}
-
-              <li><a href="{{site.url}}{{site.baseurl}}/blog/page/{{ paginator.total_pages }}/">Poslední</a></li>
-
-              {% if paginator.next_page %}
+			  
+              <!-- {% if paginator.next_page %}
+              	<li><a href="{{site.url}}{{site.baseurl}}/blog/page/{{ paginator.page }}/">Poslední</a></li>
                 <li><a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">&raquo;</a></li>
               {% else %}
                 <li class="disabled"><span>&raquo;</span></li>
-              {% endif %}
+			  {% endif %} -->
+			  	{% if paginator.next_page %}
+				  <li class="page-item"><a href="{{ paginator.next_page_path }}" class="page-link">Další</a></li>
+				{% else %}
+				<li class="page-item disabled"><span class="page-link ">Další</span></li>
+				{% endif %}
             </ul>
           {% endif %}
       </div>

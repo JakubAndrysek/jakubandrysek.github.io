@@ -1,5 +1,5 @@
 <!-- Replace the email with your own formspree email -->
-<form action="https://formspree.io/{{ site.formspree_email }}" method="POST" >
+<form action="https://formspree.io/f/{{ site.formspree_form_id }}" method="POST" >
     <div class="form-group">
       <label for="contact_form_name">Vaše jméno :</label>
       <input type="text" class="form-control" name="name" id="contact_form_name" placeholder="Zadejte Vaše jméno">
@@ -10,7 +10,7 @@
      </div> 
      <div class="form-group">
        <label for="contact_form_message"> Zpráva :</label>
-      <textarea name="_message" class="form-control" id="contact_form_message" placeholder="Zadejte zprávu"></textarea>
+      <textarea name="message" class="form-control" id="contact_form_message" placeholder="Zadejte zprávu"></textarea>
      </div> 
       <!-- <input type="submit" value="Odeslat"> -->
       <button type="submit" class="btn btn-primary">Odeslat</button>
