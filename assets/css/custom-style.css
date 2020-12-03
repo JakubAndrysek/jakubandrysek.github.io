@@ -155,3 +155,11 @@ a.nav-link.nav-hover.active {
     -webkit-transform: scale(1.1); /* Safari 3-8 */
     transform: scale(1.1); 
   }
+
+
+.page-link{
+	background-color:#f69801;
+	border-color: #f69801;
+	color: white;
+}
+
