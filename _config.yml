@@ -61,11 +61,15 @@ author_education_details:
 # It depends on the order
 show_author_project_details: true
 projects:
+      - IoT
       - roboruka
       - laser
       - 3D-tisk
+      - SLA
+      - helceletka
       - navod
       - lezcata
+      - rotex
 
 # social links
 # twitter_username: johndoe
@@ -114,6 +118,8 @@ google_analytics: UA-149505692-2
 paginate: 6
 per_page: 6
 paginate_path: "/blog/page/:num/"
+
+permalink: /:year/:month/:day/:title:output_ext
 
 # minify
 # compress_html:

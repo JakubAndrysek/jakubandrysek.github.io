@@ -4,7 +4,7 @@ title: Chytrý kurník #title|název článku
 layout: post                     #layout|šablona
 author: Kuba Andrýsek            #authos|autor
 date: '2020-04-15 14:00:00 +1'   #date|datum vytvoření článku
-category:                #category|kategorie -> pro novou kategorii je potřeba vytvořit stránku v "categories"
+category: IoT               #category|kategorie -> pro novou kategorii je potřeba vytvořit stránku v "categories"
 description: Chytrý kurník aneb automatizace celého kurníku              #Header|nadpis
 thumbnail: chytry-kurnik/main.jpg              #thumbnail|titulní foto -> cesta "/img/blog/**nazev-clanku/Kolo.png**"
 head_photo: chytry-kurnik/small-main.jpg              #vrchni fotka  -> cesta "/img/blog/**nazev-clanku/Kolo.png**"
