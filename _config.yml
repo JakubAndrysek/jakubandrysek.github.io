@@ -62,14 +62,18 @@ author_education_details:
 show_author_project_details: true
 projects:
       - IoT
-      - roboruka
-      - laser
+      - Roboruka
+      - Laser
       - 3D-tisk
       - SLA
-      - helceletka
-      - navod
-      - lezcata
-      - rotex
+      - Helceletka
+      - Návody
+      - Lezčata
+      - Rotex
+
+# projects:
+#       - IoTIoT
+#       - roboruka      
 
 # social links
 # twitter_username: johndoe
@@ -85,7 +89,7 @@ linkedin_username: jakub-andrysek
 
 
 #for comments using disqus
-disqus_shortname: kubaandrysek
+disqus_shortname: kuba-andrysek
 
 # wakatime username (coding activity)
 wakatime_username: KubaAndrysek

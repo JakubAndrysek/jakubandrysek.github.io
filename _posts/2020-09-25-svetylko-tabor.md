@@ -4,7 +4,7 @@ title: Noční světýlko - pozdrav z tábora #title|název článku
 layout: post                     #layout|šablona
 author: Kuba Andrýsek            #authos|autor
 date: '2020-09-25 11:00:00 +1'   #date|datum vytvoření článku
-category: helceletka               #category|kategorie -> pro novou kategorii je potřeba vytvořit stránku v "categories"
+category: Helceletka               #category|kategorie -> pro novou kategorii je potřeba vytvořit stránku v "categories"
 description: Návrh nočního světýlky na táborové dílny pro DDM Helceletka             #Header|nadpis
 thumbnail: svetylko-tabor/main2.jpg              #thumbnail|titulní foto -> cesta "/img/blog/**nazev-clanku/Kolo.png**"
 head_photo: svetylko-tabor/head.jpg              #vrchni fotka  -> cesta "/img/blog/**nazev-clanku/Kolo.png**"
