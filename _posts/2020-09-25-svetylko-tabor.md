@@ -11,9 +11,9 @@ head_photo: svetylko-tabor/head.jpg              #vrchni fotka  -> cesta "/img/b
 keywords: [led, svetylko, helceletka, robotarna, preklizka, laser]		#Kcicova slova
 --- 
 
-## Návrh nočního světýlky na táborové dílny pro DDM Helceletka
+## Návrh nočního světýlka na táborové dílny pro DDM Helceletka
 
-O letních prázdninách pořádý [DDM Helceletka](https://helceletka.cz/) příměstské tábory na kterých si děti vyzkoušejí aktivyty z různých odvětví, naše pobočka [Robotárna](http://helceletka.cz/robotarna/) mělá za úkol vytvořit také nějakou aktivitu kterou by si děti na táborech vyzkoušeli. Finálním návrhem se tedy stalo noční světýlko "Pozdrav z tábora", které si letos na táborech vytvořilo přes 50 dětí.
+O letních prázdninách pořádá [DDM Helceletka](https://helceletka.cz/) příměstské tábory na kterých si děti vyzkouší aktivity z různých odvětví. Naše pobočka [Robotárna](http://helceletka.cz/robotarna/) měla za úkol vytvořit také nějakou aktivitu kterou by si děti na táborech vyzkoušely. Finálním návrhem se tedy stalo noční světýlko "Pozdrav z tábora", které si letos na táborech vytvořilo přes 50 dětí.
 
 {% include image.html
 url="svetylko-tabor/build.jpg"
@@ -23,7 +23,7 @@ url="svetylko-tabor/led.jpg"
 %}
 
 ## Konstrukce
-Noční světýlko vychází z dřívější projekt [Vánoční betlém]({{site.url}}{{site.baseurl}}/laser/2019/12/20/betlem/) který však využíval pro napájení externí powerbank, v tomto návrhu bylo potřeba mít napájení přimo ve světýlku, které si děti následně odnesli domů. Jako napájení jsme tedy zvolili 3 AAA baterie. Pro nasvícení plexi využíváme 5V LED pásek, který krásně prosvítí průhledné plexi.
+Noční světýlko vychází z dřívějšího projektu [Vánoční betlém]({{site.url}}{{site.baseurl}}/laser/2019/12/20/betlem/), který však využíval pro napájení externí powerbanku. V tomto návrhu bylo potřeba mít napájení přímo ve světýlku, které si děti následně po sestavení odnesly domů. Jako napájení jsme tedy zvolili 3 AAA baterie. Pro nasvícení plexi skla, ze kterého je betlém vyroben,využíváme 5V LED pásek, který krásně prosvítí průhledné plexisklo.
 
 
 {% include image.html

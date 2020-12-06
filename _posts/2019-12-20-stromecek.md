@@ -11,7 +11,7 @@ thumbnail: stromecek/Tma2.jpg              #thumbnail|titulní foto -> cesta "/i
 
 # Podklady a návod na výrobu stromečku pro DDM Helceletka
 
-V listopadu 2019 jsem připravoval vánoční dílničky pro [DDM Helceletku](https://helceletka.cz/). Stromeček je na laseru vyřezán z 3mm překližky. Během prosince 2019 se v Brně na pobočkách Helceletky vyrobilo přes 350 vánočních stromečků.
+V listopadu 2019 jsem v rámci vánočních dílniček [DDM Helceletka](https://helceletka.cz/) připravil projekt svítícího vánočního stromečku. Základ tvoří stromeček vyřezaný z 3mm překližky na laseru, který je osazen LED a napájen 9V baterií. Během prosince 2019 se v Brně na pobočkách DDM Helceletky vyrobilo přes 350 těchto vánočních stromečků.
 
 {% include image.html
 url="stromecek/Tma.jpg"
@@ -35,7 +35,7 @@ url="stromecek/Pajeni.jpg"
 - dřevěný stromeček
 - 5 červených LED
 - držák 9V baterie
-- 9V baterii
+- 9V baterie
 - 4.7K rezistor
 
 ## Návod k výrobě
