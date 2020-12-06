@@ -41,6 +41,15 @@ You can easily manage the site using the admin : [http://localhost:4000/admin](h
 - Coding Activity using [Wakatime](https://wakatime.com/)
 - Hosting Support for [Github Pages](https://pages.github.com), [Netlify](https://netlify.com), [Zeit](https://zeit.co), [Heroku](https://heroku.com), [AWS Amplify](aws.amplify.com)
 
+## Using PC :
+`gem install jekyll bundler`
+
+`run bundle install`
+
+`bundle exec jekyll serve -livereload`
+
+
+
 ## Using Docker :
 
 Building the Image :
