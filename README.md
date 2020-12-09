@@ -44,7 +44,7 @@ You can easily manage the site using the admin : [http://localhost:4000/admin](h
 ## Using PC :
 `gem install jekyll bundler`
 
-`run bundle install`
+`bundle install`
 
 `bundle exec jekyll serve -livereload`
 

@@ -23,7 +23,7 @@ url="svetylko-tabor/led.jpg"
 %}
 
 ## Konstrukce
-Noční světýlko vychází z dřívějšího projektu [Vánoční betlém]({{site.url}}{{site.baseurl}}/laser/2019/12/20/betlem/), který však využíval pro napájení externí powerbanku. V tomto návrhu bylo potřeba mít napájení přímo ve světýlku, které si děti následně po sestavení odnesly domů. Jako napájení jsme tedy zvolili 3 AAA baterie. Pro nasvícení plexi skla, ze kterého je betlém vyroben,využíváme 5V LED pásek, který krásně prosvítí průhledné plexisklo.
+Noční světýlko vychází z dřívějšího projektu [Vánoční betlém]({{ site.baseurl }}{% post_url 2019-12-20-betlem %}), který však využíval pro napájení externí powerbanku. V tomto návrhu bylo potřeba mít napájení přímo ve světýlku, které si děti následně po sestavení odnesly domů. Jako napájení jsme tedy zvolili 3 AAA baterie. Pro nasvícení plexi skla, ze kterého je betlém vyroben,využíváme 5V LED pásek, který krásně prosvítí průhledné plexisklo.
 
 
 {% include image.html
