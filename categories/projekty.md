@@ -14,7 +14,7 @@ image: assets/page/projekty/projekty.png
     <div class="card blog-post">
       <!--THUMBNAIL-->
       <a href="{{ site.categories[projekt][0].url }}" data-disqus-identifier="{{ post.url }}" >
-        <img class="card-img-top" src="{{site.url}}{{site.baseurl}}/assets/blog/{{ site.categories[projekt][0].thumbnail }}">
+        <img class="card-img-top" src="{{site.url}}{{site.baseurl}}/assets/blog/{{ site.categories[projekt][0].media_folder }}/{{ site.categories[projekt][0].thumbnail }}">
       </a>
       <!--TITLE-->
       <div class="card-body center">
