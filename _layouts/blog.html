@@ -24,7 +24,7 @@ image: profile.png
                       <div class="card blog-post">
 
                         <a href="{{ post.url | prepend: site.baseurl }}" data-disqus-identifier="{{ post.url }}" >
-                          <img class="card-img-top" src="{{site.url}}{{site.baseurl}}/assets/blog/{{ post.thumbnail }}" alt="{{ post.title }}">
+                          <img class="card-img-top" src="{{site.url}}{{site.baseurl}}/assets/blog/{{ post.media_folder }}/{{ post.thumbnail }}" alt="{{ post.title }}">
                         </a>
 
                           <!--<img class="card-img-top" src="{{site.url}}{{site.baseurl}}/assets/img/posts/{{ post.thumbnail }}" alt="{{ post.title }}">-->

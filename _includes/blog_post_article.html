@@ -4,7 +4,7 @@
         <h4 class="post-meta">{{ page.title }}</h4>
         <p class="post-summary">Napsal : {% if page.author %}
             <a style="text-decoration: none;" href="{{ site.url}}{{site.baseurl}}/">
-                <img src="{{site.url}}{{site.baseurl}}/assets/img/{{ site.author_logo }}" class="author-profile-img zoom">
+                <img src="{{site.url}}{{site.baseurl}}/assets/img/profile_small.png" class="author-profile-img zoom">
             </a>
             <a href="{{ site.url}}{{site.baseurl}}/">
                 <span itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -25,22 +25,18 @@
     </div>
 
     <div class="card-body" itemprop="articleBody">
-        <!--<img class="card-img-top" src="{{site.url}}{{site.baseurl}}/assets/img/posts/{{ page.thumbnail }}" alt="{{ post.title }}">-->
-
 		{% if page.head_photo %}
-			<a href="{{site.url}}{{site.baseurl}}/assets/blog/{{ page.head_photo }}"  data-fancybox="gallery" >
-				<img src="{{site.url}}{{site.baseurl}}/assets/blog/{{ page.head_photo }}" alt="{{ post.title }}" width="100%"  />
+			<a href="{{site.url}}{{site.baseurl}}/assets/blog/{{ page.media_folder }}/{{ page.head_photo }}"  data-fancybox="gallery" >
+				<img src="{{site.url}}{{site.baseurl}}/assets/blog/{{ page.media_folder }}/{{ page.head_photo }}" alt="{{ post.title }}" width="100%"  />
 			</a>
 		{% else %}
-			<a href="{{site.url}}{{site.baseurl}}/assets/blog/{{ page.thumbnail }}"  data-fancybox="gallery" >
-				<img src="{{site.url}}{{site.baseurl}}/assets/blog/{{ page.thumbnail }}" alt="{{ post.title }}" width="100%"  />
+			<a href="{{site.url}}{{site.baseurl}}/assets/blog/{{ page.media_folder }}/{{ page.thumbnail }}"  data-fancybox="gallery" >
+				<img src="{{site.url}}{{site.baseurl}}/assets/blog/{{ page.media_folder }}/{{ page.thumbnail }}" alt="{{ post.title }}" width="100%"  />
 			</a>
 		{% endif %}
-
         <br/> <br/>
         {{ content }}
     </div>
 
     <div id="disqus_thread"></div>
-
 </article>

@@ -6,8 +6,9 @@ author: Kuba Andrýsek            #authos|autor
 date: '2020-10-08 10:00:00 +1'   #date|datum vytvoření článku
 category: Laser                #category|kategorie -> pro novou kategorii je potřeba vytvořit stránku v "categories"
 description: Výroba gravýrovaných medailí na laseru              #Header|nadpis
-thumbnail: drevene-medaile/main.jpg              #thumbnail|titulní foto -> cesta "/img/blog/**nazev-clanku/Kolo.png**"
-head_photo: drevene-medaile/head2.jpg
+media_folder: drevene-medaile
+thumbnail: main.jpg              #thumbnail|titulní foto -> cesta "/img/blog/**nazev-clanku/Kolo.png**"
+head_photo: head2.jpg
 keywords: [laser, zavody, ctcup, preklizka, drevo, lezcata]
 --- 
 
@@ -19,12 +20,12 @@ Práce zahrnovala grafický návrh medailí a jejich následnou výrobu na laser
 
 
 {% include image.html
-url="drevene-medaile/pack.jpg"
+url="pack.jpg"
 %}
 {% include image.html
-url="drevene-medaile/grid.jpg"
+url="grid.jpg"
 %}
 
 {% include image.html
-url="drevene-medaile/source.jpg"
+url="source.jpg"
 %}

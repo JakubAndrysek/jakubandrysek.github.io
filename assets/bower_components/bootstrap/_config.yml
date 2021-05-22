@@ -29,7 +29,7 @@ exclude:
   - CODE_OF_CONDUCT.md
   - composer.json
   - Gemfile
-  - Gemfile.lock
+  - xGemfile.lock
   - package.js
   - package.json
   - package-lock.json

@@ -17,9 +17,9 @@
         <div class="card-header"> O mě </div>
         <div class="card-body">
             <!-- Your Bio -->
-            <p class="author_bio"> {{ site.author_bio }}</p>
+            <p class="author_bio"> {%- include about_me.html -%}</p>
 
-            {%- include github_star_button.html -%}
+            {%- include github_follow_button.html -%}
         </div>
     </div>    
 </div>
